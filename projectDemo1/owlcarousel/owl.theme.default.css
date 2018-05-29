@@ -1,0 +1,120 @@
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+/*
+ * 	Default theme - Owl Carousel CSS File
+ */
+.owl-prev{
+  position: absolute;
+  background-color: #fff
+
+}
+
+.owl-next {
+  position: absolute;
+background-color: #fff
+}
+
+.owl-theme .owl-nav {
+  margin-top: 10px;
+  text-align: center;
+  position: relative;
+      display: flex;
+    justify-content: space-between;
+  -webkit-tap-highlight-color: transparent; }
+  .owl-theme .owl-nav [class*='owl-'] {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    margin-bottom: -66px;
+    padding: 4px 7px;
+    background: #fff;
+   position: static;
+    cursor: pointer;
+    border-radius: 0px;
+    height: 50px;
+    width: 40px
+     }
+    .owl-theme .owl-nav [class*='owl-']:hover {
+      background: #fff;
+      color: #FFF;
+      border:1px solid #0049b0;
+      text-decoration: none; 
+      }
+  .owl-theme .owl-nav .disabled {
+    opacity: 0.5;
+    cursor: default;   position: relative;}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 10px; }
+
+.owl-theme .owl-dots {
+    padding-bottom: 22px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+  .owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    *display: inline; }
+    .owl-theme .owl-dots .owl-dot span {
+      width: 50px;
+      height: 50px;
+      margin: 5px 7px;
+      background: #D6D6D6;
+      display: block;
+      -webkit-backface-visibility: visible;
+      transition: opacity 200ms ease;
+      border-radius: 30px; }
+    .owl-theme .owl-dots .owl-dot.active:first-child  span
+    {
+      background-image:url(../img/chuMini.png);}
+
+
+     .owl-theme .owl-dots .owl-dot:first-child  span{transition: margin-left  0.2s ease-out ;
+      background-image:url(../img/chuMini.png);}
+
+       .owl-theme .owl-dots .owl-dot:first-child  span:hover{margin-left: px ;margin-right: px
+       }
+
+
+ .owl-theme .owl-dots .owl-dot.active:nth-child(2)  span
+    {
+      background-image:url(../img/veiderMini.png);}
+
+
+     .owl-theme .owl-dots .owl-dot:nth-child(2)  span{ transition: margin-left  0.2s ease-out ;
+      background-image:url(../img/veiderMini.png);}
+
+       .owl-theme .owl-dots .owl-dot:nth-child(2)  span:hover{margin-left: px ;margin-right: px
+       }
+
+
+
+
+       .owl-theme .owl-dots .owl-dot.active:nth-child(3)  span
+    {
+      background-image:url(../img/yodaMini.png);}
+
+
+     .owl-theme .owl-dots .owl-dot:nth-child(3)  span{transition: margin-left  0.2s ease-out ;
+      background-image:url(../img/yodaMini.png);}
+
+       .owl-theme .owl-dots .owl-dot:nth-child(3)  span:hover{margin-left: px ;margin-right: px
+       }
+
+ .owl-theme .owl-dots .owl-dot.active:nth-child(4)  span
+    {
+      background-image:url(../img/r2d2Mini.png);}
+
+
+     .owl-theme .owl-dots .owl-dot:nth-child(4)  span{transition: margin-left  0.2s ease-out ;
+      background-image:url(../img/r2d2Mini.png);}
+
+       .owl-theme .owl-dots .owl-dot:nth-child(4)  span:hover{margin-left: px ;margin-right: px
+       }
+
+
+
+    

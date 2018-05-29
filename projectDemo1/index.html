@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="owlcarousel/owl.theme.default.css" rel="stylesheet">
+    <link href="owlcarousel/owl.carousel.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container ">
+            <div class="row">
+                <div class="navbar flex_space_between   ">
+                    <!--  -->
+                    <div class="col-md-5    col-sm-5 col-xs-2 hidden-sm hidden-md  relative_position col-sm-offset-1  col-md-offset-2 hidden-lg  ">
+                        <div class="navbar-header text-center">
+                            <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4    col-sm-5 col-xs-5  relative_position  col-lg-3 ">
+                        <a href="#"><img class="img-responsive padding_top_15" src="img/logo.png" alt=""></a>
+                    </div>
+                    <div class="col-md-4  col-sm-6 col-xs-2 col-lg-offset-2">
+                        <form class="pull-right " role="search">
+                            <div id="form" class="input-group padding_top_30  ">
+                                <input type="text" class="form-control   hidden-xs" placeholder="Search for...">
+                                <span class="input-group-btn ">
+                                       <button class="btn btn-default" id="open" type="button"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                                </span>
+                            </div>
+                            <!-- /input-group -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header text-center">
+                    <button type="button" class="navbar-toggle hidden-xs " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-btn   text-uppercase text-center ">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">SERVICES</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Help & FAQ</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse  " id="bs-example-navbar-collapse-2">
+                    <div id="form" class="flex_space_between hidden-sm hidden-md hidden-lg">
+                        <input type="text" class="form-control " placeholder="Search for...">
+                        <span class="input-group-btn ">
+                                       <button class="btn btn-default" id="open" type="button"  >
+                                        <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        </span>
+                    </div>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </nav>
+    </header>
+    <div class="container text-center">
+        <h1 class="row-m-t">Buttons</h1>
+        <div class="row ">
+            <div class="d_flex ">
+                <button type="button" class="btn  btn-primary">Primary</button>
+                <button type="button" class="btn btn-default">Default</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <h1 class="text-center row-m-t ">Inputs</h1>
+        <div class="row d_flex ">
+            <div class="  mr-ml">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input  " type="checkbox" id="inlineCheckbox1" value="option1" checked>
+                    <label class="form-check-label  " for="inlineCheckbox1">
+                        <p>Checkbox Active</p>
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Checkbox</label>
+                </div>
+            </div>
+            <div class="mr-ml">
+                <div class="form-check ">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        <p>Radio Active</p>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                        Radio
+                    </label>
+                </div>
+            </div>
+            <div class="text-center mr-ml pull-left">
+                <div class="material-switch   ">Switcher On
+                    <input id="someSwitchOptionPrimary" name="someSwitchOption001" type="checkbox" checked="1" />
+                    <label for="someSwitchOptionPrimary" class="label-primary"> </label>
+                </div>
+                <div class="material-switch padding_top_15 ">Switcher Off
+                    <input id="someSwitchOptionPrimary1" name="someSwitchOption002" type="checkbox" />
+                    <label for="someSwitchOptionPrimary1" class="label-primary"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <h1 class="text-center row-m-t">Star rating</h1>
+        <div class="row d_flex ">
+            <div class=" col ">
+                <fieldset class="rating ">
+                    <input type="radio" id="star5" name="rating" value="5" />
+                    <label for="" title="Rocks!">5 stars</label>
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label for="" title="Pretty good">4 stars</label>
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label for="" title="Meh">3 stars</label>
+                    <input type="radio" id="star2" name="rating" value="2" />
+                    <label for="" title="Kinda bad">2 stars</label>
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label for="" title="Sucks big time">1 star</label>
+                </fieldset>
+                <fieldset class="rating">
+                    <input type="radio" id="star5" name="rating" value="5" />
+                    <label for="star5" title="Rocks!">5 stars</label>
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label for="star4" title="Pretty good">4 stars</label>
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label for="star3" title="Meh">3 stars</label>
+                    <input type="radio" id="star2" name="rating" value="2" />
+                    <label for="star2" title="Kinda bad">2 stars</label>
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label for="star1" title="Sucks big time">1 star</label>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <h1 class="text-center row-m-t">Carousel</h1>
+        <div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
+            <div class="owl-carousel owl-theme owl-loaded  ">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <div class="owl-item">
+                            <div class="row ">
+                                <div class="   col-xs-4 col-sm-3 col-md-4"><img class="img-responsive" src="img/chubaka.png" alt="">
+                                </div>
+                                <div class="col-md-7 padding_top_30 ">
+                                    <p>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a time.</p>
+                                    <h5>Chewbacca</h5>
+                                    <p class="lead">July 2017 </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="row">
+                                <div class="col-sm-3 col-xs-4  col-md-4"><img src="img/veider.png" alt="">
+                                </div>
+                                <div class="col-md-7 padding_top_30 ">
+                                    <p>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a time.</p>
+                                    <h5>Chewbacca</h5>
+                                    <p class="lead">July 2017 </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="row">
+                                <div class="col-sm-3 col-xs-4  col-md-4"><img src="img/yoda.png" alt="">
+                                </div>
+                                <div class="col-md-7 padding_top_30 ">
+                                    <p>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a time.</p>
+                                    <h5>Chewbacca</h5>
+                                    <p class="lead">July 2017 </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="row">
+                                <div class="col-sm-3 col-xs-4  col-md-4"><img src="img/r2d2.png" alt="">
+                                </div>
+                                <div class="col-md-7 padding_top_30 ">
+                                    <p>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a time.</p>
+                                    <h5>Chewbacca</h5>
+                                    <p class="lead">July 2017 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="map"></div>
+    <div class="container">
+        <div class="row padding_top_30 ">
+            <div class="col-md-2 col-xs-12 col-lg-3  col-sm-12 text-center pull-right">
+                <ul class="list-group list-unstyled  list-group-item ">
+                    <li class=""> <a href="#"> Folow Us</a> </li>
+                    <div class="">
+                        <li class="list-group-item"> <a href="#"><span class="item_follows">
+      <img class="align_center_flex_item" src="img/ffff.png" alt="">
+    </span> </a> </li>
+                        <li class="list-group-item"> <a href="#"><span class="item_follows">
+      <img class="align_center_flex_item" src="img/t.png" alt="">
+    </span> </a> </li>
+                        <li class="list-group-item"> <a href="#"><span class="item_follows">
+      <img class="align_center_flex_item" src="img/iiii.png" alt="">
+    </span> </a> </li>
+                        <li class="list-group-item"> <a href="#"><span class="item_follows">
+      <img class="align_center_flex_item" src="img/ppp.png" alt="">
+    </span> </a> </li>
+                    </div>
+                </ul>
+            </div>
+            <div class=" col-xs-4 col-sm-4   hidden-xs col-md-3">
+                <ul class="list-unstyled list-group-item ">
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Browse By Holidays</a></li>
+                    <li><a href="#">Browse By Brand</a></li>
+                    <li><a href="#">Gift of the Month Clubs</a></li>
+                    <li><a href="#">Customized Bottles</a></li>
+                    <li><a href="#">Corporate Gifts</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4  col-xs-4  hidden-xs  col-md-3">
+                <ul class="list-unstyled list-group-item">
+                    <li><a href="">About</a></li>
+                    <li><a href="">About Spirited Gifts</a></li>
+                    <li><a href="">Read our Blog</a></li>
+                    <li><a href="">About our Selection</a></li>
+                    <li><a href="">Read our Reviews</a></li>
+                    <li><a href="">Shipping & Returns</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3   col-xs-4  hidden-xs  col-sm-4 ">
+                <ul class="list-unstyled list-group-item">
+                    <li><a href="">More</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Retailer Network</a></li>
+                    <li><a href="">Help and FAQs</a></li>
+                    <li><a href="">Scholarship</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="container">
+                <div class="row  text-center  ">
+                    <div class=" col-md-4   col-xs-12  hidden-sm hidden-md
+ hidden-lg  col-sm-4  ">
+                        <div class="dropdown">
+                            <div class="select text-center ">
+                                <span>Shop</span>
+                                <i class="fa fa-chevron-left"></i>
+                            </div>
+                            <input type="hidden" name="gender">
+                            <ul class="list-unstyled list-group-item  dropdown-menu  text-center ">
+                                <li><a href="#">Browse By Holidays</a></li>
+                                <li><a href="#">Browse By Brand</a></li>
+                                <li><a href="#">Gift of the Month Clubs</a></li>
+                                <li><a href="#">Customized Bottles</a></li>
+                                <li><a href="#">Corporate Gifts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3    col-xs-12  hidden-sm hidden-md
+ hidden-lg col-sm-4">
+                        <div class="dropdown">
+                            <div class="select text-center ">
+                                <span>About</span>
+                                <i class="fa fa-chevron-left"></i>
+                            </div>
+                            <input type="hidden" name="gender">
+                            <ul class="list-unstyled list-group-item  dropdown-menu">
+                                <li><a href="">About Spirited Gifts</a></li>
+                                <li><a href="">Read our Blog</a></li>
+                                <li><a href="">About our Selection</a></li>
+                                <li><a href="">Read our Reviews</a></li>
+                                <li><a href="">Shipping & Returns</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class=" col-md-3    col-xs-12   hidden-sm hidden-md
+ hidden-lg  col-sm-4">
+                        <div class="dropdown">
+                            <div class="select text-center ">
+                                <span>More</span>
+                                <i class="fa fa-chevron-left"></i>
+                            </div>
+                            <input type="hidden" name="gender">
+                            <ul class="list-unstyled list-group-item dropdown-menu">
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Retailer Network</a></li>
+                                <li><a href="">Help and FAQs</a></li>
+                                <li><a href="">Scholarship</a></li>
+                                <li><a href="">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    function initMap() {
+        var uluru = { lat: 8.315711, lng: -62.70808 };
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: uluru,
+            styles: [{
+                    "featureType": "administrative",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                },
+                {
+                    "featureType": "administrative",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                },
+                {
+                    "featureType": "landscape",
+                    "stylers": [{
+                            "color": "#9d9d9d"
+                        },
+                        {
+                            "saturation": -85
+                        },
+                        {
+                            "lightness": -45
+                        },
+                        {
+                            "visibility": "off"
+                        },
+                        {
+                            "weight": 0.5
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#c3c3c3"
+                    }]
+                },
+                {
+                    "featureType": "landscape",
+                    "elementType": "labels.icon",
+                    "stylers": [{
+                        "saturation": -30
+                    }]
+                },
+                {
+                    "featureType": "landscape.man_made",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#cfdad1"
+                    }]
+                },
+                {
+                    "featureType": "landscape.natural",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#dfe6e0"
+                    }]
+                },
+                {
+                    "featureType": "landscape.natural.terrain",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                            "color": "#ffeb3b"
+                        },
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape.natural.terrain",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                        "color": "#ffeb3b"
+                    }]
+                },
+                {
+                    "featureType": "poi",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#2a2a2a"
+                    }]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                            "color": "#2a2a2a"
+                        },
+                        {
+                            "weight": 0.5
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "labels.icon",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "labels.text",
+                    "stylers": [{
+                            "saturation": 1
+                        },
+                        {
+                            "lightness": 122
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                            "color": "#515151"
+                        },
+                        {
+                            "saturation": 4
+                        },
+                        {
+                            "lightness": -75
+                        },
+                        {
+                            "weight": 1
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "stylers": [{
+                            "visibility": "on"
+                        },
+                        {
+                            "weight": 1
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                },
+                {
+                    "featureType": "road.highway.controlled_access",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                },
+                {
+                    "featureType": "transit",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                },
+                {
+                    "featureType": "transit.station.rail",
+                    "elementType": "geometry",
+                    "stylers": [{
+                            "color": "#000000"
+                        },
+                        {
+                            "weight": 1
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit.station.rail",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                            "color": "#000000"
+                        },
+                        {
+                            "weight": 6.5
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit.station.rail",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                        "color": "#000000"
+                    }]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                            "color": "#0049b0"
+                        },
+                        {
+                            "weight": 8
+                        }
+                    ]
+                }
+            ]
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+    </script>
+    <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPYtDsuzNC-n3e2ovM3EMfyBQ4uNH5fDA&callback=initMap" type="text/javascript">
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script>
+    /*Dropdown Menu*/
+    $('.dropdown').click(function() {
+        $(this).attr('tabindex', 1).focus();
+        $(this).toggleClass('active');
+        $(this).find('.dropdown-menu').slideToggle(300);
+    });
+    $('.dropdown').focusout(function() {
+        $(this).removeClass('active');
+        $(this).find('.dropdown-menu').slideUp(300);
+    });
+
+    /*End Dropdown Menu*/
+    </script>
+    <script>
+    $(".owl-carousel ").owlCarousel({
+        nav: true,
+        items: 1,
+        singleItem: true,
+        navigation: true,
+        autoPlay: true,
+        pagination: false,
+        autoHeight: true,
+        navText: ['<img class=\"qwe\" src=\"img/next.png\" alt="">', '<img  class=\"qwer\" src=\"img/prev.png\" alt="">']
+
+    });
+    </script>
+</body>
+
+</html>

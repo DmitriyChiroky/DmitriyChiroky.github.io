@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 body {
   font-family: 'PT Sans', sans-serif; }
 
@@ -6,7 +6,7 @@ body {
   margin-bottom: 230px; }
 
 .wrap_head {
-  height: 941px;
+ min-height: 941px;
   background-image: url("../img/living-bg.png"); }
 
 .navbar_pad {

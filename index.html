@@ -19,14 +19,17 @@
             <div class="container-fluid navbar_bg">
                 <div class="container navbar_pad">
                     <div class="row">
-                        <div class=" col-xl-3 offset-md-4 offset-xl-0 offset-sm-3">
+                        <div class=" col-xl-3 offset-md-4 offset-xl-0 offset-sm-3 offset-3">
                             <div class="logo">
                                 <a href="#"><img src="img/logo.png" alt="logo"></a>
                             </div>
                         </div>
-                        <div class="col-md-9 offset-md-2 col-xl-6 offset-xl-3 ">
+                        <div class="col-md-9 offset-md-2 col-xl-6 offset-xl-3  ">
                             <nav>
-                                <ul class="nav-list">
+                            	<button class="menuToggle c-hamburger c-hamburger--htx">
+  <span>toggle menu</span>
+</button>
+                                <ul class="nav-list menu">
                                     <li class="nav-list__item">
                                         <a href="#">Главная</a>
                                     </li>
@@ -44,20 +47,6 @@
                                             </ul>
                                             <div class="entry">
                                                 <ul class="submenu__item__super_sub_nav">
-                                                    <li class="submenu__item__super_sub_nav__item"><a href="#"> Сарпи    </a>
-                                                    </li>
-                                                    <li class="submenu__item__super_sub_nav__item"><a href="#">   Гонио  </a>
-                                                    </li>
-                                                    <li class="submenu__item__super_sub_nav__item"><a href="#">   Квариати  </a>
-                                                    </li>
-                                                    <li class="submenu__item__super_sub_nav__item"><a href="#">   Уреки  </a>
-                                                    </li>
-                                                    <li class="submenu__item__super_sub_nav__item"><a href="#">  Кобулеты   </a>
-                                                    </li>
-                                                    <li class="submenu__item__super_sub_nav__item"><a href="#">    Батуми </a>
-                                                    </li>
-                                                    <li class="submenu__item__super_sub_nav__item"><a href="#">  Анаклия </a>
-                                                    </li>
                                                 </ul>
                                                 <ul class="submenu__item__super_sub_nav">
                                                     <li class="submenu__item__super_sub_nav__item"><a href="#"> Гудаури    </a>
@@ -233,11 +222,13 @@
                 </div>
             </div>
         </section>
+   
     </div>
+       
     <script>
     $(document).ready(function() {
         $('.nav-list li ul').hide();
-        $('li').hover(
+        $('li').click(
             function() {
                 $('ul', this).slideToggle(400);
             },
@@ -281,6 +272,51 @@
 
         }
     });
+
+
+
+
+
+
+/////////////////////GAMBURER TOGGGLE
+    (function() {
+ 
+  "use strict";
+ 
+  var toggles = document.querySelectorAll(".c-hamburger");
+ 
+  for (var i = toggles.length - 1; i >= 0; i--) {
+    var toggle = toggles[i];
+    toggleHandler(toggle);
+  };
+ 
+  function toggleHandler(toggle) {
+    toggle.addEventListener( "click", function(e) {
+      e.preventDefault();
+      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+    });
+  }
+ 
+})();
+$(function(){
+
+
+
+///////////// MENU TOGLE
+    $('.menuToggle').on('click', function() {
+
+       $('.menu').slideToggle(300, function(){
+           
+            if( $(this).css('display') === "none"){
+                $(this).removeAttr('style');
+            }
+
+       });
+
+    });
+
+});
+
     </script>
     <script>
     document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')

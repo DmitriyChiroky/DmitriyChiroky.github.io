@@ -1,326 +1,165 @@
-<html>
-
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <!-- Bootstrap grid styles for this template -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/boot-reboot.css" rel="stylesheet">
-    <!-- Custom  styles for this template -->
-    <link href="css/stlyle.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+	<title>Главная</title>
+	<meta name='description' content="" />
+	<meta name="keywords" content="" />
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+			<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.css" />	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />	
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="scss/style.css" />
 </head>
+<body class="loaded">
 
-<body>
-    <div class="wrap_head">
-        <header id="header">
-            <div class="container-fluid navbar_bg">
-                <div class="container navbar_pad">
-                    <div class="row">
-                        <div class=" col-xl-3 offset-md-4 offset-xl-0 offset-sm-3 offset-3">
-                            <div class="logo">
-                                <a href="#"><img src="img/logo.png" alt="logo"></a>
-                            </div>
-                        </div>
-                        <div class="col-md-9 offset-md-2 col-xl-6 offset-xl-3  ">
-                            <nav>
-                            	<button class="menuToggle c-hamburger c-hamburger--htx">
-  <span>toggle menu</span>
-</button>
-                                <ul class="nav-list menu">
-                                    <li class="nav-list__item">
-                                        <a href="#">Главная</a>
-                                    </li>
-                                    <li class="nav-list__item">
-                                        <a href="#">Направления</a>
-                                        <div class="enter">
-                                            <ul class="submenu" id="naprav">
-                                                <!--  <div class="ssss"> -->
-                                                <li class="submenu__item"><a href=#>Море</a>
-                                                </li>
-                                                <li class="submenu__item"><a href=#>Горы</a></li>
-                                                <li class="submenu__item"><a href=#>Города</a></li>
-                                                <li class="submenu__item"><a href=#>Места</a></li>
-                                                <!-- </div>  -->
-                                            </ul>
-                                            <div class="entry">
-                                                <ul class="submenu__item__super_sub_nav">
-                                                </ul>
-                                                <ul class="submenu__item__super_sub_nav">
-                                                    <li class="submenu__item__super_sub_nav__item"><a href="#"> Гудаури    </a>
-                                                    </li>
-                                                    <li class="submenu__item__super_sub_nav__item"><a href="#">   Годердзи  </a>
-                                                    </li>
-                                                    <li class="submenu__item__super_sub_nav__item"><a href="#">   Боржоми  </a>
-                                                    </li>
-                                                    <li class="submenu__item__super_sub_nav__item"><a href="#">   Стефанцминда  </a>
-                                                    </li>
-                                                    <li class="submenu__item__super_sub_nav__item"><a href="#">  Ушгули   </a>
-                                                    </li>
-                                                    <li class="submenu__item__super_sub_nav__item"><a href="#">    Местиа </a>
-                                                    </li>
-                                                    <li class="submenu__item__super_sub_nav__item"><a href="#">  Бакуриани </a>
-                                                    </li>
-                                                </ul>
-                                                <ul class="submenu__item__super_sub_nav">
-                                                    <li class="submenu__item__super_sub_nav__item"><a href="#"> Ахалцихе    </a>
-                                                    </li>
-                                                    <li class="submenu__item__super_sub_nav__item"><a href="#">   Зугдиди  </a>
-                                                    </li>
-                                                    <li class="submenu__item__super_sub_nav__item"><a href="#">   Кутаиси  </a>
-                                                    </li>
-                                                    <li class="submenu__item__super_sub_nav__item"><a href="#">   Мцхета  </a>
-                                                    </li>
-                                                    <li class="submenu__item__super_sub_nav__item"><a href="#">  Телави   </a>
-                                                    </li>
-                                                    <li class="submenu__item__super_sub_nav__item"><a href="#">  Тбилиси   </a>
-                                                    </li>
-                                                    <li class="submenu__item__super_sub_nav__item"><a href="#">  Сигнаги </a>
-                                                    </li>
-                                                </ul>
-                                                <ul class="submenu__item__super_sub_nav">
-                                                    <li class="submenu__item__super_sub_nav__item"><a href="#"> Мартвили    </a>
-                                                    </li>
-                                                    <li class="submenu__item__super_sub_nav__item"><a href="#">   Саирме  </a>
-                                                    </li>
-                                                    <li class="submenu__item__super_sub_nav__item"><a href="#">   Сурами  </a>
-                                                    </li>
-                                                    <li class="submenu__item__super_sub_nav__item"><a href="#">   Тушети  </a>
-                                                    </li>
-                                                    <li class="submenu__item__super_sub_nav__item"><a href="#">  Цхалтубо   </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="nav-list__item">
-                                        <a href="#">Страховка</a>
-                                    </li>
-                                    <li class="nav-list__item">
-                                        <a href="#">Авиа</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <section class="main">
-            <div class="container">
-                <div class="select_panel">
-                    <ul class="select_panel__list">
-                        <li class="select_panel__list__items"><a href="#"><span class="ico ico__1 "></span> Жилье</a></li>
-                        <li class="select_panel__list__items"><a href="#"><span class="ico ico__2"></span> Туры</a></li>
-                        <li class="select_panel__list__items"><a href="#"><span class="ico ico__3"></span> Экскурсии</a></li>
-                        <li class="select_panel__list__items"><a href="#"><span class="ico ico__4"></span> Aвто</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="widgets">
-                <div class="container">
-                    <div class="row paddd">
-                        <div class="col-md-6 col-12 col col-xl-4">
-                            <div class="widgets__widget_1">
-                                <p><span class="ico ico__5"></span> Интервал дат начала тура <i class="fas fa-chevron-down"></i></p>
-                                <ul class="select_radio_list d-no " id="radiolist1">
-                                    <li class="select_radio_list__item">
-                                        <input class="radio_custom" type="radio"> 1</li>
-                                    <li class="select_radio_list__item">
-                                        <input class="radio_custom" type="radio"> 2</li>
-                                    <li class="select_radio_list__item">
-                                        <input class="radio_custom" type="radio"> 3</li>
-                                    <li class="select_radio_list__item">
-                                        <input class="radio_custom" type="radio"> 4</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-12 col col-xl-4">
-                            <div class="widgets__widget_2">
-                                <p>Количество Дней<i class="fas fa-chevron-down"></i></p>
-                                <ul class="select_radio_list d-no " id="radiolist2">
-                                    <li class="select_radio_list__item">
-                                        <input class="radio_custom" type="radio"> 1</li>
-                                    <li class="select_radio_list__item">
-                                        <input class="radio_custom" type="radio"> 2</li>
-                                    <li class="select_radio_list__item">
-                                        <input class="radio_custom" type="radio"> 3</li>
-                                    <li class="select_radio_list__item">
-                                        <input class="radio_custom" type="radio"> 4</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-10col-12  offset-md-1  offset-xl-0 col-xl-4 ">
-                            <div class="widgets__widget_3">
-                                <span class="type_range">GEL</span> <span class="min" id="min"></span>
-                                <input type="range" min="1" max="3000+ " value="50" class="slider" id="myRange"><span class="max"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="search">
-                <div class="container">
-                    <div class="row">
-                        <div class="col wrap_search"> <span class="ico ico__6"></span>
-                            <p class="search_advanced">Расширенный поиск</p>
-                        </div>
-                    </div>
-                    <div class="row ccc">
-                        <div class="col-md-6">
-                            <div class="type_of_tour">
-                                <h5>Тип тура </h5>
-                                <ul class="type_of_tour__list d-no ">
-                                    <li class="type_of_tour__list__item">
-                                        <input class="inchange" type="checkbox">Все</li>
-                                    <li class="type_of_tour__list__item">
-                                        <input class="inchange" type="checkbox">Пляжный</li>
-                                    <li class="type_of_tour__list__item">
-                                        <input class="inchange" type="checkbox">горно-лыжные</li>
-                                    <li class="type_of_tour__list__item">
-                                        <input class="inchange" type="checkbox">лечебные</li>
-                                    <li class="type_of_tour__list__item">
-                                        <input class="inchange" type="checkbox">Свадебные</li>
-                                    <li class="type_of_tour__list__item">
-                                        <input class="inchange" type="checkbox">Экстремальные</li>
-                                    <li class="type_of_tour__list__item">
-                                        <input class="inchange" type="checkbox">Гастрономические</li>
-                                    <li class="type_of_tour__list__item">
-                                        <input class="inchange" type="checkbox">Экскурсионные</li>
-                                    <li class="type_of_tour__list__item">
-                                        <input class="inchange" type="checkbox">Паломнические</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="type_feed">
-                                <h5>Питание</h5>
-                                <ul class="type_of_tour__list d-no ">
-                                    <li class="type_of_tour__list__item">
-                                        <input class="inchange" type="checkbox">Не включено</li>
-                                    <li class="type_of_tour__list__item">
-                                        <input class="inchange" type="checkbox">ВВ - Только завтрак</li>
-                                    <li class="type_of_tour__list__item">
-                                        <input class="inchange" type="checkbox">НВ - Завтрак и Ужин</li>
-                                    <li class="type_of_tour__list__item">
-                                        <input class="inchange" type="checkbox">FВ - Полный пансион</li>
-                                    <li class="type_of_tour__list__item">
-                                        <input class="inchange" type="checkbox">AI - Все включено</li>
-                                    <li class="type_of_tour__list__item">
-                                        <input class="inchange" type="checkbox">UAI - Ультра Все</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="btn_form">
-                            <a href="#" class="btn">Подобрать</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-   
-    </div>
-       
-    <script>
-    $(document).ready(function() {
-        $('.nav-list li ul').hide();
-        $('li').click(
-            function() {
-                $('ul', this).slideToggle(400);
-            },
-            function() {
-                $('ul', this).slideToggle(300);
-            }
-        );
-    });
-    </script>
-    <script>
-    $(document).ready(function() {
-        var max = $('#myRange').attr("max");
-        $('.max').text(max)
-    });
-    var slider = document.getElementById("myRange");
-    var output = document.getElementById("min");
-    output.innerHTML = slider.value;
 
-    slider.oninput = function() {
-        output.innerHTML = this.value;
-    }
-    </script>
-    <script>
-    if ($('.type_of_tour__list').hasClass("d-no")) {
-        $('h5').css({ "border-bottom": "none", "padding-bottom": "10px" });
-    };
-    $(".widgets__widget_1").click(function() {
-        $('#radiolist1').slideToggle(200).toggleClass("d-no ");
-    });
-    $(".widgets__widget_2").click(function() {
-        $('#radiolist2').slideToggle(200).toggleClass("d-no ");
-    });
-    $(".search_advanced").click(function() {
-        $('.type_of_tour__list').slideToggle(450).toggleClass("d-no ");
-        $('.type_feed__list').slideToggle(450).toggleClass("d-no ");
-        if ($('.type_of_tour__list').hasClass("d-no")) {
-            $('h5').css({ "border-bottom": "none", "padding-bottom": "10px" });
 
-        } else {
-            $('h5').css({ "border-bottom": "solid 1px #ffffff" });
+<div class="container">
+	<div class="row flex-nowrap">
+		<div class="col-3 ">
+	<aside class="sidebar-personal">
+		<div class="logo-personal-top">
+			<div class="logo">
+				<a  href="#" class="logo-link">
+					<img src="assets/img/logod-light--1---1-.png" class="logo-img" alt="logo">
+				</a>
+			</div>
+		</div>
+		<nav class="nav-personal">
+			<ul class="menu-personal-list">
+				<li class="menu-personal-list__item js-menu-personal-list__item_ico-down ico-up">
+					<span class="menu-personal-list__ico"><img src="assets/img/ico-personal-data.png" class="" alt=""></span>
+					<a  href="#" class="menu-personal-list__link">Личные данные</a>
+				</li>
+					<li class="menu-personal-list__item js-menu-personal-list__item_ico-down">
+					<span class="menu-personal-list__ico"><img src="assets/img/ico-mail.png" alt=""></span>
+					<a  href="#" class="menu-personal-list__link">Почта</a>
+				</li>
+ 						<li class="menu-personal-list__item js-menu-personal-list__item_ico-down">
+					<span class="menu-personal-list__ico"><img src="assets/img/ico-calculator.png" alt=""></span>
+					<a  href="#" class="menu-personal-list__link">Расчеты </a>
+				</li>
+						<li class="menu-personal-list__item js-menu-personal-list__item_ico-down">
+					<span class="menu-personal-list__ico"><img src="assets/img/ico-doc.png" alt=""></span>
+					<a  href="#" class="menu-personal-list__link">Документы  </a>
+				</li>
+						<li class="menu-personal-list__item js-menu-personal-list__item_ico-down">
+					<span class="menu-personal-list__ico"><img src="assets/img/ico-waletpall.png" alt=""></span>
+					<a  href="#" class="menu-personal-list__link">Система оплаты </a>
+				</li>
+						<li class="menu-personal-list__item js-menu-personal-list__item_ico-down">
+					<span class="menu-personal-list__ico"><img src="assets/img/ico-calendar.png" alt=""></span>
+					<a  href="#" class="menu-personal-list__link">Активность </a>
+				</li>
+						<li class="menu-personal-list__item js-menu-personal-list__item_ico-down">
+					<span class="menu-personal-list__ico"><img src="assets/img/ico-orders.png" alt=""></span>
+					<a  href="#" class="menu-personal-list__link">Заказы </a>
+				</li>
+						<li class="menu-personal-list__item js-menu-personal-list__item_ico-down">
+					<span class="menu-personal-list__ico"><img src="assets/img/ico-referal-group.png" alt=""></span>
+					<a  href="#" class="menu-personal-list__link">Партнерская программа </a>
+				</li>
 
-        }
-    });
+
+				<div class="suports-personal">
+					<li class="menu-personal-list__item js-menu-personal-list__item_ico-down">
+									<span class="menu-personal-list__ico"><img src="assets/img/support.png" alt=""></span>
+									<a  href="#" class="menu-personal-list__link">Служба поддержки </a>
+								</li>
+										<li class="menu-personal-list__item js-menu-personal-list__item_ico-down">
+									<span class="menu-personal-list__ico menu-personal-list__ico_exit"><img src="assets/img/exit.png" alt=""></span>
+									<a  href="#" class="menu-personal-list__link">Выход</a>
+								</li>
+				</div>
+								
+
+
+				
+			</ul>
+		</nav>
+	</aside>
+	</div>
+	<div class="col-9">
+		<div class="wrapper-personal">
+			<section class="service-personal">
+				<div class="service-list">
+					<figure class="service-list__item service-list__item_select-user">
+						<span class=""><img src="assets/img/mortgage--3-.png" alt=""></span>
+						<p>Рефинансирование ипотеки</p>
+					</figure>
+					<figure class="service-list__item service-list__item_shadow-box">
+						<span class=""><img src="assets/img/keyword.png" alt=""></span>
+						<p>Ипотека под ключ</p>
+					</figure>
+					<figure class="service-list__item">
+						<span class=""><img src="assets/img/money-------2.png" alt=""></span>
+						<p>Банкротство физических лиц</p>
+					</figure>
+
+</div>
+	<div class="service-list-two">
+					<figure class="service-list__item_mini ">
+						<span class=""><img src="assets/img/accounting--1-------.png" alt=""></span>
+						<p>Рассчитать потребительский кредит</p>
+					</figure>
+					<figure class="service-list__item_mini ">
+						<span class=""><img src="assets/img/budget.png" alt=""></span>
+						<p>Рассчитать ипотеку</p>
+					</figure>
+					<figure class="service-list__item_mini">
+						<span class=""><img src="assets/img/currency.png" alt=""></span>
+						<p>Рефинансирование потребительского кредита</p>
+					</figure>
+
+
+					<figure class="service-list__item_mini ">
+						<span class=""><img src="assets/img/protect.png" alt=""></span>
+						<p>Страхование жизни</p>
+					</figure>
+					<figure class="service-list__item_mini ">
+						<span class=""><img src="assets/img/2-layers.png" alt=""></span>
+						<p>Страхование недвижимости</p>
+					</figure>
+				</div>
+				
+			</section>
+		</div>
+	</div>
+	</div>
+</div>
 
 
 
 
 
 
-/////////////////////GAMBURER TOGGGLE
-    (function() {
- 
-  "use strict";
- 
-  var toggles = document.querySelectorAll(".c-hamburger");
- 
-  for (var i = toggles.length - 1; i >= 0; i--) {
-    var toggle = toggles[i];
-    toggleHandler(toggle);
-  };
- 
-  function toggleHandler(toggle) {
-    toggle.addEventListener( "click", function(e) {
-      e.preventDefault();
-      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
-    });
-  }
- 
-})();
-$(function(){
 
 
 
-///////////// MENU TOGLE
-    $('.menuToggle').on('click', function() {
 
-       $('.menu').slideToggle(300, function(){
-           
-            if( $(this).css('display') === "none"){
-                $(this).removeAttr('style');
-            }
 
-       });
 
-    });
 
-});
 
-    </script>
-    <script>
-    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-    </script>
+
+
+
+
+<div class="icon-load"></div>		
+
+<!-- BODY EOF   -->
+	<script src="bootstrap/dist/js/bootstrap.min.js"></script>		
+	<script src="assets/js/jquery-3.0.0.min.js"></script>		
+	<script src="assets/js/jquery-migrate-1.4.1.min.js" ></script>
+	<!--
+	<script src="js/components/jquery.fancybox.js" ></script>
+	<script src="js/components/jquery.formstyler.js" ></script>
+	<script src="js/components/slick.js" ></script>
+	<script src="js/components/jquery.mCustomScrollbar.js" ></script>
+	-->
+	<script src="assets/js/custom.js" ></script>
 </body>
-
 </html>

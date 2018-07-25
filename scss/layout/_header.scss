@@ -1,0 +1,159 @@
+
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+// header{
+// 	background:#f0f0f0 url(../img/bg_header.jpg) no-repeat left top;
+// 	width:100%; height: 80px;
+// 	min-width: $min-width;
+// 	text-align:left;	
+// 	order: 1;	
+//     -webkit-order: 1;	
+// }
+
+.sidebar-personal{
+	margin-top: 57px;
+}
+.nav-personal{
+	margin-top: 70px;
+	padding-left: 7px;
+
+}
+
+.menu-personal-list{
+	&__item {
+		min-width: 279px;
+		list-style: none;
+		height: 47px;
+		margin-bottom: 30px;
+		position: relative;
+	}
+	&__ico {
+		height: 47px;
+		width: 47px;
+		background-color: #feec1b;
+		display: inline-block;
+		vertical-align: middle;
+		line-height: 10px;
+		&_exit{
+			background-color: #000000;
+		}
+	}
+		
+	
+	&__link {
+ 	
+color: #000000;
+font-family: "Open Sans";
+font-size: 17px;
+font-weight: 400;
+padding-left: 20px;
+			&:focus{
+				color: #000000;
+				text-decoration: none;
+			}
+			&:hover{
+				color: #000000;
+				text-decoration: none;
+			}
+			
+ 	 }
+		img{
+padding-top: 15px;
+display: block;
+  margin: 0 auto;
+		}
+}
+.suports-personal{
+	margin-top: 130px;
+}
+
+.ico-up::after {
+    content: url('..//..//assets/img/miniico-play-down.png');
+    right: 10px;
+    top: 34%;
+    position: absolute;
+}
+
+.ico-down::after {
+    content: url('../img/rectangle-66-copy-132.png');
+    right: 10px;
+    margin: auto;
+    top: 30%;
+    position: absolute;
+}
+
+//////////////////////////////////////////
+
+
+.wrapper-personal{
+	margin-left: 18px;
+	height: 1000px;
+background-color: #f8f8f8;
+}
+.service-personal{
+padding-top: 200px;
+}
+.service-list{
+	display: flex;
+	justify-content: flex-end;
+
+	&__item{
+		margin-left: 20px;
+		flex-direction: column;
+	display: flex;
+	justify-content: center;
+align-items: center;
+		width: 256px;
+		height: 197px;
+		background-color: #ffffff;border: 1px solid #dadada;
+		&_select-user{
+			border: 2px solid #f64f4f;
+		}
+		&_shadow-box{
+			box-shadow: 0 0 35px rgba(0, 0, 0, 0.21);
+		}
+	
+	}
+}
+.service-list-two{
+	padding-top: 50px;
+display: flex;
+padding-left: 14px;
+	justify-content: space-around;
+	.service-list__item_mini{
+
+text-align: center;
+		flex-direction: column;
+	display: flex;
+	justify-content: center;
+align-items: center;
+		width: 146px;
+		height: 141px;
+		background-color: #ffffff;
+		border: 1px solid #dadada;
+	}
+}
+
+
+@media screen and (max-width: 1200px) {
+	
+}
+
+@media screen and (min-width: 992px){
+	
+}
+
+@media screen and (max-width: 991px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+@media screen and (max-width: 767px) {
+	
+}

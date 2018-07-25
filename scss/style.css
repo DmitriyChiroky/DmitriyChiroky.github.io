@@ -1,0 +1,117 @@
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+.sidebar-personal {
+  margin-top: 57px; }
+
+.nav-personal {
+  margin-top: 70px;
+  padding-left: 7px; }
+
+.menu-personal-list__item {
+  min-width: 279px;
+  list-style: none;
+  height: 47px;
+  margin-bottom: 30px;
+  position: relative; }
+.menu-personal-list__ico {
+  height: 47px;
+  width: 47px;
+  background-color: #feec1b;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 10px; }
+  .menu-personal-list__ico_exit {
+    background-color: #000000; }
+.menu-personal-list__link {
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 17px;
+  font-weight: 400;
+  padding-left: 20px; }
+  .menu-personal-list__link:focus {
+    color: #000000;
+    text-decoration: none; }
+  .menu-personal-list__link:hover {
+    color: #000000;
+    text-decoration: none; }
+.menu-personal-list img {
+  padding-top: 15px;
+  display: block;
+  margin: 0 auto; }
+
+.suports-personal {
+  margin-top: 130px; }
+
+.ico-up::after {
+  content: url("..//..//assets/img/miniico-play-down.png");
+  right: 10px;
+  top: 34%;
+  position: absolute; }
+
+.ico-down::after {
+  content: url("../img/rectangle-66-copy-132.png");
+  right: 10px;
+  margin: auto;
+  top: 30%;
+  position: absolute; }
+
+.wrapper-personal {
+  margin-left: 18px;
+  height: 1000px;
+  background-color: #f8f8f8; }
+
+.service-personal {
+  padding-top: 200px; }
+
+.service-list {
+  display: flex;
+  justify-content: flex-end; }
+  .service-list__item {
+    margin-left: 20px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 256px;
+    height: 197px;
+    background-color: #ffffff;
+    border: 1px solid #dadada; }
+    .service-list__item_select-user {
+      border: 2px solid #f64f4f; }
+    .service-list__item_shadow-box {
+      box-shadow: 0 0 35px rgba(0, 0, 0, 0.21); }
+
+.service-list-two {
+  padding-top: 50px;
+  display: flex;
+  padding-left: 14px;
+  justify-content: space-around; }
+  .service-list-two .service-list__item_mini {
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 146px;
+    height: 141px;
+    background-color: #ffffff;
+    border: 1px solid #dadada; }
+
+/*
+================================================================================
+|                                     FOOTER                                   |
+================================================================================
+*/
+/* titles */
+/*
+================================================================================
+|                                     CONTENT                                 |
+================================================================================
+*/
+/* reset */
+/* main variables */
+
+/*# sourceMappingURL=style.css.map */

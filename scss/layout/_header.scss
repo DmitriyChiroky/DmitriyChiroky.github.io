@@ -4,14 +4,18 @@
 |                                     HEADER                                   |
 ================================================================================
 */
-// header{
-// 	background:#f0f0f0 url(../img/bg_header.jpg) no-repeat left top;
-// 	width:100%; height: 80px;
-// 	min-width: $min-width;
-// 	text-align:left;	
-// 	order: 1;	
-//     -webkit-order: 1;	
-// }
+
+body{
+	overflow-x: hidden;
+}
+.child {
+    z-index: -2;
+    height:100%;
+    position:absolute;
+    left:50%;
+    width:100%;
+   background-color: #f8f8f8;
+}
 
 .sidebar-personal{
 	margin-top: 57px;
@@ -26,17 +30,21 @@
 	&__item {
 		min-width: 279px;
 		list-style: none;
-		height: 47px;
+		min-height: 47px;
 		margin-bottom: 30px;
+
 		position: relative;
+		 
+  
 	}
 	&__ico {
 		height: 47px;
 		width: 47px;
 		background-color: #feec1b;
 		display: inline-block;
-		vertical-align: middle;
+		 vertical-align: middle;
 		line-height: 10px;
+			text-align: center;
 		&_exit{
 			background-color: #000000;
 		}
@@ -44,7 +52,7 @@
 		
 	
 	&__link {
- 	
+
 color: #000000;
 font-family: "Open Sans";
 font-size: 17px;
@@ -61,68 +69,185 @@ padding-left: 20px;
 			
  	 }
 		img{
+
 padding-top: 15px;
-display: block;
+display: inline-block;
   margin: 0 auto;
 		}
 }
 .suports-personal{
 	margin-top: 130px;
 }
-
-.ico-up::after {
-    content: url('..//..//assets/img/miniico-play-down.png');
+.js-item_ico-down:after {
+	    content: url('..//..//assets/img/miniico-play-down.png');
     right: 10px;
-    top: 34%;
+ top: 10px;
     position: absolute;
+
+   // top: 50%;                        
+   // transform: translate(0, -64%);
 }
-
-.ico-down::after {
-    content: url('../img/rectangle-66-copy-132.png');
+.js-item_ico-up:after {
+	    content: url('..//..//assets/img/miniico-play-up.png');
     right: 10px;
-    margin: auto;
-    top: 30%;
+ top: 10px;
     position: absolute;
+
+}
+// .ico-up{
+//     content: url('..//..//assets/img/miniico-play-down.png');
+//     right: 10px;
+//     top: 34%;
+//     position: absolute;
+// }
+
+// .ico-down::after {
+//     content: url('../img/rectangle-66-copy-132.png');
+//     right: 10px;
+//     margin: auto;
+//     top: 30%;
+//     position: absolute;
+// }
+.sub-menu-side{
+border-left: 3px solid  #feec1b;
+padding-top: 20px;
+padding-left: 0px;
+display: none;
+
+	&__item{
+list-style: none;
+padding-left: 32px;
+margin: 12px 0 12px 0;
+position: relative;
+			a{
+				color: #000000;
+				text-decoration: none;
+			}
+		
+
+	}
+			&__item:before{
+				content: '';
+				height: 100%;
+				width: 5px;
+				border-left: 3px solid  #feec1b;
+				display: block;
+				position: absolute;
+				transform: rotate(90deg);
+				left: 7px;
+
+}
 }
 
 //////////////////////////////////////////
+.header{
 
+}
+.nav-header{
+padding-top: 80px;
+margin-left: 100px;
+}
 
-.wrapper-personal{
+.menu-header-list{
+	display: inline-block;
+	font-weight: 300;
+	&__item{
+  list-style: none;
+  display: inline-block;
+  margin-right: 15px;
+  margin-left: 15px;
+	}
+	&__link{
+color: #000000;
+		
+			&:focus{
+				color: #000000;
+				text-decoration: none;
+			}
+			&:hover{
+				color: #000000;
+				text-decoration: none;
+			}
+
+	}
+}.notification-top{
+	display: inline-block;
+margin-left: 30px;
+	   .top-notification__notice{
+	margin-left: 30px;
+        text-decoration: none;
+        	position: relative;
+
+	   }
+}
+.number-notifications{
+
+color: #ffffff;
+font-family: "Arial - Bold MT";
+font-size: 12px;
+font-weight: 400;
+line-height: 1.4;
+    position: absolute;
+    z-index: 5;
+    color: #ffffff;
+    border-radius: 40px;
+ 
+border: 2px solid #ffffff;
+background-color: #f64f4f;
+right: -6px;
+bottom: -10px;
+text-align: center;
+    min-width: 20px;
+    min-height: 20px;
+
+}
+.notice-img{
+
+}
+
+  
+
+.wrapper-personal-page{
 	margin-left: 18px;
-	height: 1000px;
+	padding-bottom: 77px;
 background-color: #f8f8f8;
+position: relative;
 }
 .service-personal{
-padding-top: 200px;
+margin-left: 35px;
+margin-top: 77px;
+text-align: center;
 }
 .service-list{
 	display: flex;
-	justify-content: flex-end;
+display: flex;
+font-size: 18px;
+	justify-content: space-between;
+
 
 	&__item{
-		margin-left: 20px;
-		flex-direction: column;
-	display: flex;
-	justify-content: center;
-align-items: center;
+		padding-top: 40px;
+
 		width: 256px;
 		height: 197px;
+
 		background-color: #ffffff;border: 1px solid #dadada;
 		&_select-user{
 			border: 2px solid #f64f4f;
 		}
-		&_shadow-box{
+		&:hover{
 			box-shadow: 0 0 35px rgba(0, 0, 0, 0.21);
 		}
-	
+			p{
+					padding-top: 17px;
+			}
 	}
 }
-.service-list-two{
+.service-list-mini{
 	padding-top: 50px;
 display: flex;
-padding-left: 14px;
-	justify-content: space-around;
+font-size: 14px;
+justify-content: space-between;
 	.service-list__item_mini{
 
 text-align: center;
@@ -134,10 +259,221 @@ align-items: center;
 		height: 141px;
 		background-color: #ffffff;
 		border: 1px solid #dadada;
+			&:hover{
+			box-shadow: 0 0 35px rgba(0, 0, 0, 0.21);
+		}
+		span{
+			margin-top: 20px;
+		}
+		p{
+			padding-top: 10px;
+		}
 	}
 }
 
+.wrapper-sidebar{
+	background-color: #ffffff;
+}
 
+
+
+
+
+
+
+
+////////////////////////
+.wrap-service-request{
+margin-left: 18px;
+height: 567px;
+background-color: #f1f1f1;
+padding-top: 50px;
+display: flex;
+justify-content: space-around;
+}
+.title-mix-h_light{
+	font-size: 30px;
+font-weight: 300;
+line-height: 78px;
+
+// font-family: "Open Sans - Light";
+font-weight: 300;
+}
+.title-mix-h_bold{
+	// font-family: "Open Sans - Bold";
+font-weight: 700;
+}
+
+.active-services{
+
+ 			&__title{
+
+ 			}
+
+
+ 			.active-content{
+ 				width: 385px;
+height: 363px;
+border: 1px solid #dadada;
+background-color: #ffffff;
+
+
+text-align: center;
+		flex-direction: column;
+	display: flex;
+	justify-content: space-around;
+align-items: center;
+ 				&__img{
+
+ 				}
+
+ 				&__start-time{
+ 					
+ 				}
+ 				&__name{
+
+ 				}
+ 				&__service-status{
+					color: #f64f4f;
+// font-family: "Open Sans - Semibold";
+font-size: 16px;
+font-weight: 400;
+ 				}
+ 			}
+}
+.wprap-help-content{
+	height: 363px;
+	width: 385px;
+border: 1px solid #dadada;
+background-color: #ffffff;
+}
+.requests-for-help{
+
+			&__title{
+		
+			}
+
+				&__button-request{
+ 					margin: 0 auto;
+ 					display: block;
+ 					margin-top: 72px;
+					
+ 				}
+ 				.button-request{
+ 					width: 184px;
+					height: 47px;
+					border-radius: 24px;
+					border: 2px solid #000000;
+					background-color: #ffffff;
+					color: #000000;
+font-family: "Open Sans";
+font-size: 16px;
+font-weight: 700;
+text-transform: uppercase;
+						&:hover{
+									cursor: pointer;
+						}
+				}
+			.help-content{
+				
+
+padding-left: 0;
+
+
+ 				&__item{
+						list-style:none;
+						margin: 24px 24px 14px 20px;
+						padding-bottom: 14px;
+						position: relative;
+						border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+
+						font-family: "Open Sans";
+font-size: 19px;
+font-weight: 300;
+						&:hover{
+							font-family: "Open Sans - Semibold";
+font-weight: 400;cursor: pointer;
+						}
+ 				}
+
+
+ 			
+ 			}
+}
+.js-help-content__item_ico-arrow::after {
+    content: url('..//..//assets/img/mini-ico-play-right.png');
+   right: 30px;
+  
+    position: absolute;
+}
+
+.wrap-banner-social{
+	background-color: #f8f8f8;
+  margin-left: 18px;
+  padding-top: 70px;
+  height: 600px;
+}
+.banner-social{
+	width: 859px;
+height: 317px;
+background-color: #feec1b;
+text-align: center;
+margin: 0 auto;
+	&__title{
+       padding-top: 40px;
+	}
+	&__circs{
+		font-family: "Open Sans - Semibold";
+font-size: 20px;
+font-weight: 400;
+line-height: 29px;
+	}
+}
+.social-group{
+	padding-top: 40px;
+text-align: center;
+padding-left: 0;
+	&__item{
+		list-style: none;
+width: 53px;
+height: 53px;
+border: 2px solid #000000;
+display: inline-block;
+margin: 0 10px 0 10px;
+				&:hover{
+					box-shadow: 0 0 19px 2px rgba(0, 0, 0, 0.2);
+background-color: #ffffff;
+				}
+	}
+	&__link-ico{
+
+	}
+	img{
+		
+        margin-top: 25%;
+		text-align: left;
+
+	}
+}
+//////////////////fooooooooooooooooooooooooooo
+.wave-form-wrap {
+	margin-top: -100px;
+}
+.wave-form{
+	background-image: url('..//assets/img/waves_footer.png');
+	max-width: 1920px ;
+height: 150px;
+background-size: 100%;
+background-repeat: no-repeat;
+position: relative;
+z-index: 10;
+
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1250px;
+  }
+}
 @media screen and (max-width: 1200px) {
 	
 }

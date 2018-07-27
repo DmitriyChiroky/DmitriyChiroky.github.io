@@ -30,7 +30,7 @@
 		</div>
 		<nav class="nav-personal">
 			<ul class="menu-personal-list">
-				<li class="menu-personal-list__item   js-item_ico-down">
+				<li class="menu-personal-list__item  js-menu-personal-list__item  js-item_ico-down">
 					<span class="menu-personal-list__ico"><img src="assets/img/ico-personal-data.png" class="" alt=""></span>
 					<a  href="#" class="menu-personal-list__link">Личные данные</a>
 
@@ -41,7 +41,7 @@
 						<li class="sub-menu-side__item"><a href="">Example</a></li>
 					</ul>
 				</li>
-					<li class="menu-personal-list__item js-item_ico-down">
+					<li class="menu-personal-list__item js-menu-personal-list__item   js-item_ico-down">
 					<span class="menu-personal-list__ico"><img src="assets/img/ico-mail.png" alt=""></span>
 					<a  href="#" class="menu-personal-list__link">Почта</a>
 						<ul class="sub-menu-side">
@@ -55,7 +55,7 @@
 					<span class="menu-personal-list__ico"><img src="assets/img/ico-calculator.png" alt=""></span>
 					<a  href="#" class="menu-personal-list__link">Расчеты </a>
 				</li>
-						<li class="menu-personal-list__item js-item_ico-down">
+						<li class="menu-personal-list__item js-menu-personal-list__item  js-item_ico-down">
 					<span class="menu-personal-list__ico"><img src="assets/img/ico-doc.png" alt=""></span>
 					<a  href="#" class="menu-personal-list__link">Документы  </a>
 						<ul class="sub-menu-side">
@@ -65,7 +65,7 @@
 						<li class="sub-menu-side__item"><a href="">Example</a></li>
 					</ul>
 				</li>
-						<li class="menu-personal-list__item js-item_ico-down">
+						<li class="menu-personal-list__item js-menu-personal-list__item  js-item_ico-down">
 					<span class="menu-personal-list__ico"><img src="assets/img/ico-waletpall.png" alt=""></span>
 					<a  href="#" class="menu-personal-list__link">Система оплаты </a>
 						<ul class="sub-menu-side">
@@ -279,8 +279,8 @@
    //     $(this).parent().parent().find('.menu-personal-list__item ').toggleClass('  js-item_ico-down js-item_ico-up ');
 //});
 
-    $(".menu-personal-list__item ").click(function() {
-        $(this).toggleClass(" js-item_ico-down js-item_ico-up");
+    $(".js-menu-personal-list__item ").click(function() {
+        $(this).toggleClass(" js-item_ico-up");
     });
 
 		  $(".menu-personal-list__item ").click(function() {

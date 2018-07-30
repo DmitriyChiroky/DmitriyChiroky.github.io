@@ -15,5 +15,22 @@
 }
 
 @media screen and (max-width: 767px) {
-	
+
+
+}
+
+@media screen and (max-width: 835px) {
+.menu-list {
+   
+    display: block;
+   
+}
+.menu-list__item::after{
+	content: " ";
+}
+.menu-list__item{
+	&:hover{
+		background-color: #333333;
+	}
+}
 }

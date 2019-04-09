@@ -92,8 +92,8 @@
 
         <div class="video-player__slider_item">
 
-          <video>
-            <source src="1.mp4" type="">
+          <video poster="">
+            <source src="2.mp4" type="">
             </video>
 
             <button class="play-video" type="button"><i class="fa fa-play"></i></button>
@@ -115,8 +115,8 @@
 
                  <div class="video-player__slider_item">
 
-          <video>
-            <source src="1.mp4" type="">
+          <video poster="">
+            <source src="2.mp4" type="">
             </video>
 
             <button class="play-video" type="button"><i class="fa fa-play"></i></button>
@@ -139,8 +139,8 @@
 
         <div class="video-player__slider_item">
 
-          <video>
-            <source src="1.mp4" type="">
+          <video poster="">
+            <source src="2.mp4" type="">
             </video>
 
             <button class="play-video" type="button"><i class="fa fa-play"></i></button>
@@ -273,8 +273,92 @@
    <script type="text/javascript">
     jQuery(document).ready(function($) {
       var valueVol;
-      $('.volume-changer').on('click', 'span', function(event) {
-       valueVol = (  $(this).data('value'))
+      var timeout = null;
+
+
+      //       $('.video-player__slider video').each(function(index, el) {
+      //   $(el).on('pause',  function(event) {
+      //   });
+      //   $(el).on('play',  function(event) {
+      //   });
+
+$('video').on('mousemove', function() {
+            if ($('.slick-current').find('video')[0].paused) {
+  }else {
+    clearTimeout(timeout);
+       $('.slick-current').find('.play-video').fadeIn(400)
+    $('.progress-wrap').css("bottom","10px");
+             timeout = setTimeout(function() {
+        $('.slick-current .progress-wrap').css("bottom","-65px");
+        $('.slick-current').find('.play-video').fadeOut(400)
+    }, 3000);
+ 
+  }
+});
+      $('.left-col').hover(function() {
+          if ($('.slick-current').find('video')[0].paused) {
+  }else {
+      clearTimeout(timeout);
+    $('.slick-current').find('.video-desc').fadeIn(400);
+          $('.slick-current').find('video')[0].pause();
+          $('.slick-current').find('.play-video').html('<i class="fas fa-play"></i>')
+  }
+       $(this).addClass('left-col-active')
+      });
+// On before slide change
+$('.video-player__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+  if (  $(this).find('.slick-current ').find('video')[0].paused) {
+
+  }else {
+          $(this).find('.slick-current ').find('video')[0].pause();
+          $(this).find('.slick-current ').find('.play-video').html('<i class="fas fa-play"></i>')
+  }
+});
+            $('.video-player__slider_item').each(function(index, el) {
+
+          var vid  =  $(el).find('video')[0];
+           var buttonPlay = $(el).find('.play-video')
+            var progressBar =  $(el).find('#custom-seekbar');
+            var vidDesc = $(el).find('.video-desc');
+            var progressWrap = $(el).find('.progress-wrap');
+              var volChanger = $(el).find('.volume-changer');
+              volChanger.find('span').addClass('active')
+                  $(buttonPlay).click(function(event) {
+        vidDesc.fadeOut(400)
+      progressWrap.css('visibility', 'visible').animate({opacity: 1}, 400);
+       var video = $(this).prevAll('video')[0]
+       if(video.paused) {
+
+        video.play();
+         $('.left-col').removeClass('left-col-active')
+        $(this).html('<i class="fas fa-pause"></i>')
+      }
+      else {
+        video.pause();
+        $(this).html('<i class="fas fa-play"></i>')
+        vidDesc.fadeIn(400)
+      }
+      return false;
+
+    });
+
+         var span =  progressBar.find('span')
+            progressBar.on("click", function(e){
+        var offset = $(this).offset();
+        var left = (e.pageX - offset.left);
+        var totalWidth = e.currentTarget.offsetWidth 
+     var percentage = ( left / totalWidth );
+             var vidTime = vid.duration * percentage;
+        vid.currentTime = vidTime;
+      });
+       vid.ontimeupdate = function(){
+        var percentage = ( vid.currentTime / vid.duration ) * 100;
+        span.css("width", percentage+"%");
+      };
+
+            volChanger.on('click', 'span', function(event) {
+       valueVol = ($(this).data('value'))
+       $(vid).prop("volume", valueVol / 100);
        if ($(this).hasClass('active')) {
         $(this).nextAll().removeClass('active')
       }else {
@@ -283,46 +367,21 @@
       }
     });
 
-            $('.video-player__slider video').each(function(index, el) {
-        $(el).on('pause',  function(event) {
-        });
-        $(el).on('play',  function(event) {
-        });
 
-        
-      });
+            });
+// On before slide change
+// $('.personne-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+//   console.log(currentSlide);
+// });
+
+      // var vid = document.getElementsByTagName('video')[0]
+      // vid.ontimeupdate = function(){
+      //   var percentage = ( vid.currentTime / vid.duration ) * 100;
+      //   $("#custom-seekbar span").css("width", percentage+"%");
+      // };
 
 
 
-      var vid = document.getElementsByTagName('video')[0]
-      vid.ontimeupdate = function(){
-        var percentage = ( vid.currentTime / vid.duration ) * 100;
-        $("#custom-seekbar span").css("width", percentage+"%");
-      };
-
-      $("#custom-seekbar").on("click", function(e){
-        var offset = $(this).offset();
-        var left = (e.pageX - offset.left);
-        var totalWidth = $("#custom-seekbar").width();
-        var percentage = ( left / totalWidth );
-        var vidTime = vid.duration * percentage;
-        vid.currentTime = vidTime;
-      });
-      $('.play-video').click(function(event) {
-        $('.slick-current .video-desc ').fadeOut(400)
-       $('.progress-wrap').css('visibility', 'visible').animate({opacity: 1}, 400);
-       var video = $(this).prevAll('video')[0]
-       if(video.paused) {
-        video.play();
-        $(this).html('<i class="fas fa-pause"></i>')
-      }
-      else {
-        video.pause();
-        $(this).html('<i class="fas fa-play"></i>')
-      }
-      return false;
-
-    });
 
 
 
@@ -347,7 +406,7 @@
         asNavFor: '.video-player__slider',
         centerMode: true,
         adaptiveHeight: true,
-        centerPadding: '80px',
+        centerPadding: '70px',
         focusOnSelect: true,
     // variableWidth: true,
     // adaptiveHeight: true,

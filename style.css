@@ -55,7 +55,7 @@ body{
     height: 100%;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.9);
-    transform: translateX(-441px);
+     transform: translateX(-482px);
    transition: all 0.55s cubic-bezier(0.45, 0.05, 0.55, 0.95);
    cursor: pointer;
 }
@@ -69,7 +69,18 @@ body{
 .left-col-active{
      transform: translateX(0);
 }
-
+.left-col::before{
+        content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 51px;
+height: 136px;
+background-image: url(leftEl.png);
+background-repeat: no-repeat;
+background-position: center;
+margin-top: -68px;right: -50px;
+}
 .left-col::after{
     content: '';
     position: absolute;
@@ -81,7 +92,7 @@ body{
     border-top: none;
     border-bottom: none;
     margin-top: -14px;
-    right: 15px;
+        right: -29px;
 }
 .personne-slider {
     padding-left: 20%;height: 100% ;

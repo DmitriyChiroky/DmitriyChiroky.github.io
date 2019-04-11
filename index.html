@@ -15,7 +15,7 @@
 
 
   <div class="s-video-gallery">
-    <div class="left-col">
+    <div class="left-col left-col-active">
       <h2 class="tittle__left">Our <br>Residents</h2>
       <div class="personne-slider">
         <div class="personne-slider__item" data-index="1">
@@ -296,7 +296,7 @@ $('video').on('mousemove', function() {
              timeout = setTimeout(function() {
         $('.slick-current .progress-wrap').css("bottom","-65px");
         $('.slick-current').find('.play-video').fadeOut(400)
-    }, 3000);
+    }, 1500);
  
   }
 });
@@ -312,11 +312,11 @@ $('.video-player__slider').on('afterChange', function(event, slick, currentSlide
   }
 });
 $('.video-player__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-  console.log(currentSlide)
+     $(this).find('.slick-current ').find('video')[0].pause();
+   $(this).find('.slick-current ').find('.video-desc').fadeIn(400) 
   if (  $(this).find('.slick-current ').find('video')[0].paused) {
   }else {
            $(this).find('.slick-current ').find('.play-video')[0].click()
-          $(this).find('.slick-current ').find('.play-video').html('<i class="fas fa-play"></i>')
   }
 });
             $('.video-player__slider_item').each(function(index, el) {
@@ -330,19 +330,17 @@ $('.video-player__slider').on('beforeChange', function(event, slick, currentSlid
               volChanger.find('span').addClass('active')
                   $(buttonPlay).click(function(event) {
                      clearTimeout(timeout);
-        vidDesc.fadeOut(400)
+       
       progressWrap.css('visibility', 'visible').animate({opacity: 1}, 400);
        var video = $(this).prevAll('video')[0]
        if(video.paused) {
-
         video.play();
          $('.left-col').removeClass('left-col-active')
-        $(this).html('<i class="fas fa-pause"></i>')
+         vidDesc.fadeOut(400)
       }
       else {
-        video.pause();
-        $(this).html('<i class="fas fa-play"></i>')
-        vidDesc.fadeIn(400)
+        // video.pause();
+       
       }
       return false;
 
@@ -375,22 +373,6 @@ $('.video-player__slider').on('beforeChange', function(event, slick, currentSlid
 
 
             });
-// On before slide change
-// $('.personne-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-//   console.log(currentSlide);
-// });
-
-      // var vid = document.getElementsByTagName('video')[0]
-      // vid.ontimeupdate = function(){
-      //   var percentage = ( vid.currentTime / vid.duration ) * 100;
-      //   $("#custom-seekbar span").css("width", percentage+"%");
-      // };
-
-
-
-
-
-
 
       $('.video-player__slider').slick({
         slidesToShow: 1,

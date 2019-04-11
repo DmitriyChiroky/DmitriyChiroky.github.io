@@ -249,6 +249,9 @@
                       $('.video-player__slider').find('.slick-current ').find('video')[0].pause();
                       $('.video-player__slider').find('.slick-current ').find('.play-video').css('visibility', 'visible').fadeIn(400)
                     });
+                    $('.progress-wrap').on('mousemove',  function(event) {
+                      clearTimeout(timeout);
+                    });
                     $('video').on('mousemove', function() {
                       if ($('.slick-current').find('video')[0].paused) {
                         clearTimeout(timeout);
@@ -269,7 +272,7 @@
         // On before slide change
         $('.video-player__slider').on('afterChange', function(event, slick, currentSlide) {
           if ($(this).find('.slick-current ').find('video')[0].paused) {
-            $(this).find('.slick-current ').find('.play-video')[0].click()
+            // $(this).find('.slick-current ').find('.play-video')[0].click()
           }
         });
         $('.video-player__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {

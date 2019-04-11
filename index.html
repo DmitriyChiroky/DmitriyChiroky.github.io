@@ -231,6 +231,20 @@
                 <script type="text/javascript" src="slick/slick.min.js"></script>
                 <script type="text/javascript">
                   jQuery(document).ready(function($) {
+                    var sliderOffsetTop =  $('.s-video-gallery').offset().top - 100;
+                      var sliderOffsetBot =  $('.s-video-gallery').height() + sliderOffsetTop + 200;
+                       $(window).scroll(function() {
+        var scrollTop = $(window).scrollTop();
+         var scrollBot = $(window).height() + scrollTop;
+         console.log(scrollBot)
+         console.log(sliderOffsetBot)
+              if (scrollTop < sliderOffsetTop) {
+                $('.video-player__slider').find('.slick-current ').find('.fa-pause')[0].click();
+              }
+              if (scrollBot > sliderOffsetBot) {
+                    $('.video-player__slider').find('.slick-current ').find('.fa-pause')[0].click();
+              }
+    });
                     var valueVol;
                     var timeout = null;
 

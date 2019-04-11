@@ -14,6 +14,7 @@
 <body>
   <div class="s-video-gallery">
     <div class="left-col left-col-active">
+      <div class="tab-el"></div>
       <h2 class="tittle__left">Our <br>Residents</h2>
       <div class="personne-slider">
         <div class="personne-slider__item" data-index="1">
@@ -264,11 +265,10 @@
 
                       }
                     });
-                    $('.left-col').hover(function() {
-                      $(this).addClass('left-col-active')
-                    }, function() {
-                      $(this).removeClass('left-col-active')
+                    $('.tab-el').click(function(event) {
+                      $('.left-col').toggleClass('left-col-active');
                     });
+                     
         // On before slide change
         $('.video-player__slider').on('afterChange', function(event, slick, currentSlide) {
           if ($(this).find('.slick-current ').find('video')[0].paused) {

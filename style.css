@@ -67,20 +67,46 @@ body {
     transform: translateX(0);
 }
 
-.left-col::before {
+/*.left-col::before {
     content: '';
     position: absolute;
     top: 50%;
     right: 0;
     width: 51px;
     height: 136px;
-    background-image: url(leftEl.png);
     background-repeat: no-repeat;
     background-position: center;
     margin-top: -68px;
+    background-image: url(leftEl.png);
     right: -50px;
+}*/
+.tab-el {
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    width: 51px;
+       margin-top: -68px;
+    height: 136px;
+    background-color: rgba(0, 0, 0, 0.9);
+    -webkit-clip-path: polygon(0 0, 100% 20%, 100% 80%, 0% 100%);
+    clip-path: polygon(0 0, 100% 20%, 100% 80%, 0% 100%);
+    cursor: pointer;
 }
-
+.tab-el::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 30px;
+     width: 51px;
+}
+.tab-el::before{
+       content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 30px;  width: 51px;
+}
 .left-col::after {
     content: '';
     position: absolute;

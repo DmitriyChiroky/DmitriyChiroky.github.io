@@ -1,374 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <title>Demo</title>
 </head>
-
+<style type="text/css">
+  body{
+    font-family: sans-serif;
+  }
+</style>
 <body>
-  <div class="s-video-gallery">
-    <div class="left-col left-col-active">
-      <div class="tab-el"></div>
-      <h2 class="tittle__left">Our <br>Residents</h2>
-      <div class="personne-slider">
-        <div class="personne-slider__item" data-index="1">
-          <div class="photo"><img src="hero.png"></div>
-          <div class="desc">
-            <h3></h3>
-            <p>Andrew Milk 1</p>
-            <p>Head of Marketing, Taboola</p>
-          </div>
-        </div>
-        <div class="personne-slider__item" data-index="2">
-          <div class="photo"><img src="hero.png"></div>
-          <div class="desc">
-            <h3></h3>
-            <p>Andrew Milk 2</p>
-            <p>Head of Marketing, Taboola</p>
-          </div>
-        </div>
-        <div class="personne-slider__item" data-index="3">
-          <div class="photo"><img src="hero.png"></div>
-          <div class="desc">
-            <h3></h3>
-            <p>Andrew Milk 3</p>
-            <p>Head of Marketing, Taboola</p>
-          </div>
-        </div>
-        <div class="personne-slider__item" data-index="4">
-          <div class="photo"><img src="hero.png"></div>
-          <div class="desc">
-            <h3></h3>
-            <p>Andrew Milk 4</p>
-            <p>Head of Marketing, Taboola</p>
-          </div>
-        </div>
-        <div class="personne-slider__item" data-index="5">
-          <div class="photo"><img src="hero.png"></div>
-          <div class="desc">
-            <h3></h3>
-            <p>Andrew Milk 5</p>
-            <p>Head of Marketing, Taboola</p>
-          </div>
-        </div>
-        <div class="personne-slider__item" data-index="6">
-          <div class="photo"><img src="hero.png"></div>
-          <div class="desc">
-            <h3></h3>
-            <p>Andrew Milk 6</p>
-            <p>Head of Marketing, Taboola</p>
-          </div>
-        </div>
-        <div class="personne-slider__item" data-index="7">
-          <div class="photo"><img src="hero.png"></div>
-          <div class="desc">
-            <h3></h3>
-            <p>Andrew Milk 7</p>
-            <p>Head of Marketing, Taboola</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="right-col">
-      <div class="video-player__slider">
-        <div class="video-player__slider_item">
-          <video poster="">
-            <source src="2.mp4" type="">
-            </video>
-            <button class="play-video" type="button"></button>
-            <div class="progress-wrap">
-              <i class="fa fa-pause"></i>
-              <div id="custom-seekbar">
-                <span>
-                </span>
-              </div>
-              <div class="volume-changer">
-                <span data-value="10"></span><span data-value="25"></span> <span data-value="50"></span> <span data-value="75"></span> <span data-value="100"></span>
-              </div>
-            </div>
-            <div class="video-desc">
-              <p>“Lorem ipsum dolor sit amet,
-                enim sed felis bibendum non, feugiat suspendisse vestibulum risus amet.”
-              1</p>
-            </div>
-          </div>
-          <div class="video-player__slider_item">
-            <video poster="">
-              <source src="2.mp4" type="">
-              </video>
-              <button class="play-video" type="button"></button>
-              <div class="progress-wrap">
-                <i class="fa fa-pause"></i>
-                <div id="custom-seekbar">
-                  <span>
-                  </span>
-                </div>
-                <div class="volume-changer">
-                  <span data-value="10"></span><span data-value="25"></span> <span data-value="50"></span> <span data-value="75"></span> <span data-value="100"></span>
-                </div>
-              </div>
-              <div class="video-desc">
-                <p>“Lorem ipsum dolor sit amet,
-                  enim sed felis bibendum non, feugiat suspendisse vestibulum risus amet.”
-                2</p>
-              </div>
-            </div>
-            <div class="video-player__slider_item">
-              <video poster="">
-                <source src="2.mp4" type="">
-                </video>
-                <button class="play-video" type="button"></button>
-                <div class="progress-wrap">
-                  <i class="fa fa-pause"></i>
-                  <div id="custom-seekbar">
-                    <span>
-                    </span>
-                  </div>
-                  <div class="volume-changer">
-                    <span data-value="10"></span><span data-value="25"></span> <span data-value="50"></span> <span data-value="75"></span> <span data-value="100"></span>
-                  </div>
-                </div>
-                <div class="video-desc">
-                  <p>“Lorem ipsum dolor sit amet,
-                    enim sed felis bibendum non, feugiat suspendisse vestibulum risus amet.”
-                  3</p>
-                </div>
-              </div>
-              <div class="video-player__slider_item">
-                <video>
-                  <source src="1.mp4" type="">
-                  </video>
-                  <button class="play-video" type="button"></button>
-                  <div class="progress-wrap">
-                    <i class="fa fa-pause"></i>
-                    <div id="custom-seekbar">
-                      <span>
-                      </span>
-                    </div>
-                    <div class="volume-changer">
-                      <span data-value="10"></span><span data-value="25"></span> <span data-value="50"></span> <span data-value="75"></span> <span data-value="100"></span>
-                    </div>
-                  </div>
-                  <div class="video-desc">
-                    <p>“Lorem ipsum dolor sit amet,
-                      enim sed felis bibendum non, feugiat suspendisse vestibulum risus amet.”
-                    4</p>
-                  </div>
-                </div>
-                <div class="video-player__slider_item">
-                  <video>
-                    <source src="1.mp4" type="">
-                    </video>
-                    <button class="play-video" type="button"></button>
-                    <div class="progress-wrap">
-                      <i class="fa fa-pause"></i>
-                      <div id="custom-seekbar">
-                        <span>
-                        </span>
-                      </div>
-                      <div class="volume-changer">
-                        <span data-value="10"></span><span data-value="25"></span> <span data-value="50"></span> <span data-value="75"></span> <span data-value="100"></span>
-                      </div>
-                    </div>
-                    <div class="video-desc">
-                      <p>“Lorem ipsum dolor sit amet,
-                        enim sed felis bibendum non, feugiat suspendisse vestibulum risus amet.”
-                      5</p>
-                    </div>
-                  </div>
-                  <div class="video-player__slider_item">
-                    <video>
-                      <source src="1.mp4" type="">
-                      </video>
-                      <button class="play-video" type="button"></button>
-                      <div class="progress-wrap">
-                        <i class="fa fa-pause"></i>
-                        <div id="custom-seekbar">
-                          <span>
-                          </span>
-                        </div>
-                        <div class="volume-changer">
-                          <span data-value="10"></span><span data-value="25"></span> <span data-value="50"></span> <span data-value="75"></span> <span data-value="100"></span>
-                        </div>
-                      </div>
-                      <div class="video-desc">
-                        <p>“Lorem ipsum dolor sit amet,
-                          enim sed felis bibendum non, feugiat suspendisse vestibulum risus amet.”
-                        6</p>
-                      </div>
-                    </div>
-                    <div class="video-player__slider_item">
-                      <video>
-                        <source src="1.mp4" type="">
-                        </video>
-                        <button class="play-video" type="button"></button>
-                        <div class="progress-wrap">
-                          <i class="fa fa-pause"></i>
-                          <div id="custom-seekbar">
-                            <span>
-                            </span>
-                          </div>
-                          <div class="volume-changer">
-                            <span data-value="10"></span><span data-value="25"></span> <span data-value="50"></span> <span data-value="75"></span> <span data-value="100"></span>
-                          </div>
-                        </div>
-                        <div class="video-desc">
-                          <p>“Lorem ipsum dolor sit amet,
-                            enim sed felis bibendum non, feugiat suspendisse vestibulum risus amet.”
-                          7</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-                <script type="text/javascript" src="slick/slick.min.js"></script>
-                <script type="text/javascript">
-                  jQuery(document).ready(function($) {
-                    var sliderOffsetTop =  $('.s-video-gallery').offset().top - 100;
-                      var sliderOffsetBot =  $('.s-video-gallery').height() + sliderOffsetTop + 200;
-                       $(window).scroll(function() {
-        var scrollTop = $(window).scrollTop();
-         var scrollBot = $(window).height() + scrollTop;
-         console.log(scrollBot)
-         console.log(sliderOffsetBot)
-              if (scrollTop < sliderOffsetTop) {
-                $('.video-player__slider').find('.slick-current ').find('.fa-pause')[0].click();
-              }
-              if (scrollBot > sliderOffsetBot) {
-                    $('.video-player__slider').find('.slick-current ').find('.fa-pause')[0].click();
-              }
-    });
-                    var valueVol;
-                    var timeout = null;
+<main id="bufer">
+  <div class="b-selector">
+     <button>Get Data</button>
+ <input type="text" name="filter" />
+  <ul></ul>
+</div>
+</main>
+</body>
 
-                    $('.video-player__slider video').on('play', function(event) {
-                      $('.video-player__slider').find('.slick-current ').find('.fa-pause').removeClass('active')
-                    });
-                    $('.personne-slider__item').on('click', function(event) {
 
-                      var currentSlide = $(this).data('index') - 1;
-                      $('.video-player__slider').slick('slickGoTo', currentSlide);
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 
-                    });
-                    $('.fa-pause').on('click', function(event) {
-                      clearTimeout(timeout);
-                      $(this).addClass('active')
-                      $('.video-player__slider').find('.slick-current ').find('.video-desc').fadeIn(400);
-                      $('.video-player__slider').find('.slick-current ').find('video')[0].pause();
-                      $('.video-player__slider').find('.slick-current ').find('.play-video').css('visibility', 'visible').fadeIn(400)
-                    });
-                    $('.progress-wrap').on('mousemove',  function(event) {
-                      clearTimeout(timeout);
-                    });
-                    $('video').on('mousemove', function() {
-                      if ($('.slick-current').find('video')[0].paused) {
-                        clearTimeout(timeout);
-                      } else {
-                        clearTimeout(timeout);
-                        $('.progress-wrap').css("bottom", "10px");
-                        timeout = setTimeout(function() {
-                          $('.slick-current .progress-wrap').css("bottom", "-65px");
-                        }, 1500);
 
-                      }
-                    });
-                    $('.tab-el').click(function(event) {
-                      $('.left-col').toggleClass('left-col-active');
-                           $('.video-player__slider').find('.slick-current ').find('.fa-pause')[0].click();
-                    });
-                     
-        // On before slide change
-        $('.video-player__slider').on('afterChange', function(event, slick, currentSlide) {
-          if ($(this).find('.slick-current ').find('video')[0].paused) {
-            // $(this).find('.slick-current ').find('.play-video')[0].click()
-          }
-        });
-        $('.video-player__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-          $('.video-player__slider').find('.slick-current ').find('.play-video').css('visibility', 'visible').fadeIn('fast')
-          $(this).find('.slick-current ').find('video')[0].pause();
-          $(this).find('.slick-current ').find('.video-desc').fadeIn('fast')
-        });
-        $('.video-player__slider_item').each(function(index, el) {
+<script type="text/javascript">
+  
+  jQuery(document).ready(function($) {
+    var i;
+        $('#bufer button').click(function(event) {
+            $.ajax({
+                type: 'Get',
+                url: 'http://www.guidetosc.com/api/widget/json/get/backend-company-search',
+                beforeSend: function() {
+                },
+                success: function(response) {
+                  console.log(response)
 
-          var vid = $(el).find('video')[0];
-          var buttonPlay = $(el).find('.play-video')
-          var progressBar = $(el).find('#custom-seekbar');
-          var vidDesc = $(el).find('.video-desc');
-          var progressWrap = $(el).find('.progress-wrap');
-          var volChanger = $(el).find('.volume-changer');
-          volChanger.find('span').addClass('active')
-          $(buttonPlay).click(function(event) {
-            clearTimeout(timeout);
-            $(this).fadeOut('fast').css('visibility', 'hidden');
-            progressWrap.css('visibility', 'visible').animate({ opacity: 1 }, 400);
-            var video = $(this).prevAll('video')[0]
-            if (video.paused) {
-              video.play();
-              $('.left-col').removeClass('left-col-active')
-              vidDesc.fadeOut(400)
-            }
+for (var i = 0; i <= 20; i++) {
+  console.log(  response[i].company)
+  $('ul').append('<li>' + response[i].company + '</li>')
+}
+                },
+            });
             return false;
+    });
 
-          });
+ $('input[name="filter"]').val('');
+ $('input[name="filter"]').keyup(function(e){
+  var inputValue = $.trim($(this).val()).toLowerCase()
+  i = 0
+  $menuElements = $('ul li')
+  len = $menuElements.length;
+  if (inputValue !== '') {
+   $menuElements.hide();
+   for (; i < len; i += 1) {
+    if (inputValue === $menuElements.eq(i).text().toLowerCase().substr(0, inputValue.length)) {
+     $menuElements.eq(i).show();
+    }
+   }
+  } else {
+   $menuElements.show();
+  }
+ });
 
-          var span = progressBar.find('span')
-          progressBar.on("click", function(e) {
-            var offset = $(this).offset();
-            var left = (e.pageX - offset.left);
-            var totalWidth = e.currentTarget.offsetWidth
-            var percentage = (left / totalWidth);
-            var vidTime = vid.duration * percentage;
-            vid.currentTime = vidTime;
-          });
-          vid.ontimeupdate = function() {
-            var percentage = (vid.currentTime / vid.duration) * 100;
-            span.css("width", percentage + "%");
-          };
+  });
+</script>
 
-          volChanger.on('click', 'span', function(event) {
-            valueVol = ($(this).data('value'))
-            $(vid).prop("volume", valueVol / 100);
-            if ($(this).hasClass('active')) {
-              $(this).nextAll().removeClass('active')
-            } else {
-              $(this).addClass('active')
-              $(this).prevAll().addClass('active')
-            }
-          });
-
-
-        });
-
-        $('.video-player__slider').slick({
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          speed: 1000,
-          draggable: false,
-          arrows: false,
-        });
-        $('.personne-slider').slick({
-          pauseOnFocus: true,
-          dots: true,
-          infinite: true,
-          slidesToShow: 5,
-          slidesToScroll: 1,
-          speed: 1000,
-          vertical: true,
-          verticalSwiping: false,
-          centerMode: true,
-          adaptiveHeight: true,
-          centerPadding: '70px',
-          focusOnSelect: true,
-        });
-      });
-    </script>
-  </body>
-
-  </html>
+</html>

@@ -81,37 +81,46 @@ img {
     font-size: 16px;
     margin: 0 auto;
     color: #fff;
-    transition: opacity .3s ease;
-    margin-bottom: 30px; }
+    transition: opacity .3s ease; }
     .s-body__link:hover {
       opacity: 0.7; }
-  .s-body-info__row {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 18px; }
-  .s-body-info__datetime {
-    font-size: 20px;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #9D775F;
-    display: flex;
-    align-items: center; }
-    .s-body-info__datetime:first-child {
-      margin-right: 25px; }
-      .s-body-info__datetime:first-child img {
-        margin-right: 14px; }
-    .s-body-info__datetime:last-child {
-      margin-left: 25px; }
-      .s-body-info__datetime:last-child img {
-        margin-right: 12px; }
-  .s-body-info__address {
-    font-size: 14px;
-    color: #6D7881;
-    text-style: normal; }
-    .s-body-info__address img {
-      margin-right: 10px;
-      vertical-align: middle;
-      font-style: inherit; }
+  .s-body-info {
+    opacity: 0;
+    transform: scale(1);
+    transition: all 0.3s ease;
+    max-height: 0;
+    overflow: hidden; }
+    .s-body-info.active {
+      opacity: 1;
+      transform: scale(1);
+      max-height: 200px;
+      padding-top: 30px; }
+    .s-body-info__row {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 18px; }
+    .s-body-info__datetime {
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #9D775F;
+      display: flex;
+      align-items: center; }
+      .s-body-info__datetime:first-child {
+        margin-right: 25px; }
+        .s-body-info__datetime:first-child img {
+          margin-right: 14px; }
+      .s-body-info__datetime:last-child {
+        margin-left: 25px; }
+        .s-body-info__datetime:last-child img {
+          margin-right: 12px; }
+    .s-body-info__address {
+      font-size: 14px;
+      color: #6D7881; }
+      .s-body-info__address img {
+        margin-right: 10px;
+        vertical-align: middle;
+        font-style: inherit; }
   @media (max-width: 375px) {
     .s-body__title {
       font-size: 19vw; } }

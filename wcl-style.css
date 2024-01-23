@@ -110,7 +110,8 @@
 .mepr-price-menu .mepr-price-boxes .mepr-price-box-button a {
     width: 100%;
     max-width: 236px;
-    height: 47px;
+    min-height: 47px;
+    height: auto;
     text-align: center;
     display: inline-flex;
     align-items: center;

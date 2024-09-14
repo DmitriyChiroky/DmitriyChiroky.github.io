@@ -1,12 +1,11 @@
 
-
 ## Описание проекта
 
 ### Flashcards
 
 Flashcards — простое и эффективное приложение для изучения английских слов.
 
-Ссылка на сайт: [DmitriyChiroky.github.io](https://DmitriyChiroky.github.io/)
+Скриншот: [Screenshot.jpg](https://github.com/DmitriyChiroky/projects/blob/main/flashcards/Screenshot.jpg)
 
 Особенности:
 - Быстрый просмотр переводов и удобная навигация.
